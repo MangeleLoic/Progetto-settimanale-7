@@ -73,7 +73,7 @@ itemForm.addEventListener('submit', function (e) {
         method: methodToUse,
         body: JSON.stringify(newProdotto),
         headers: {
-            "Authorization": "Bearer YOUR_TOKEN_HERE", // Sostituisci con il tuo token
+            "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NmEzNjIzMGYyNjBjYzAwMTVjYzBkZWMiLCJpYXQiOjE3MjE5ODM1MzYsImV4cCI6MTcyMzE5MzEzNn0.OVb-e905Ih4e9Jd9qgq1e2n6q1OiP2TlwMSttriiES8",
             'Content-Type': 'application/json',
         }
     })
