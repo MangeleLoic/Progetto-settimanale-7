@@ -24,10 +24,10 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                            <a class="nav-link " aria-current="page" href="./index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="./backoffice.html">Back-Office</a>
+                            <a class="nav-link active" aria-current="page" href="./backoffice.html">Back-Office</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">stagione 2024/25</a>
@@ -55,13 +55,42 @@
                 </div>
             </div>
         </nav>
-        <img class="w-100 position-relative z-0" src="assets/images/DESKTOP_SLIDER_HOME_KIT_24-25.webp" alt="inter">
+        <img class="w-100 position-relative z-0" src="assets/images/LANDING_HOMEKIT_24-25.jpg" alt="inter">
     </header>
     <main>
-        <h1 class="text-center m-5">InterFans Shop</h1>
+        <h1 class="text-center m-5">Admin</h1>
         <div class="container mt-3">
-            <div class="row" id="items-row">
-                
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8">
+                    <form id="item-form">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Item</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="description" class="form-label">Descrizione</label>
+                            <textarea id="description" rows="3" class="form-control"
+                                placeholder="inserisci descizione del prodotto" required></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="brand" class="form-label">Brand</label>
+                            <textarea id="brand" rows="1" class="form-control" placeholder="inserisci brand"
+                                required></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="Image" class="form-label">Immagine</label>
+                            <textarea id="image" rows="1" class="form-control"
+                                placeholder="inserisci link dell'immagine del prodotto" required></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="Price" class="form-label">Prezzo</label>
+                            <input type="number" class="form-control" id="price"
+                                placeholder="inserisci il prezzo del prodotto" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit Item</button>
+                    </form>
+                </div>
             </div>
         </div>
 
@@ -70,7 +99,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-    <script src="assets/script.js"></script>
+    <script src="assets/backoffice.js"></script>
 </body>
 
 </html>
